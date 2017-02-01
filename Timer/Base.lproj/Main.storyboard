@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="OZ2-zo-bTc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aap-VV-7aw">
+            <objects>
+                <viewController id="OZ2-zo-bTc" customClass="ViewController" customModule="Timer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TeL-B9-TwU"/>
+                        <viewControllerLayoutGuide type="bottom" id="tnJ-SL-s3y"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MUB-pP-DhU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jfg-8w-Z3r">
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ps9-6C-bwK">
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="68" id="FdC-Qz-SNg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                        <inset key="titleEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cc-8t-yXj">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="137" id="lHH-Rw-xHC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-UltraLight" family="Avenir Next" pointSize="100"/>
+                                        <color key="textColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="5cc-8t-yXj" firstAttribute="centerY" secondItem="Jfg-8w-Z3r" secondAttribute="centerY" id="9H4-0V-QFE"/>
+                                    <constraint firstItem="Ps9-6C-bwK" firstAttribute="top" secondItem="Jfg-8w-Z3r" secondAttribute="top" constant="30" id="Fhr-5k-m8i"/>
+                                    <constraint firstItem="5cc-8t-yXj" firstAttribute="centerX" secondItem="Jfg-8w-Z3r" secondAttribute="centerX" id="Qe6-EB-CR2"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ps9-6C-bwK" secondAttribute="trailing" constant="14" id="T1T-A2-3PZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="5cc-8t-yXj" secondAttribute="trailing" id="WCk-dq-Wnq"/>
+                                    <constraint firstItem="5cc-8t-yXj" firstAttribute="leading" secondItem="Jfg-8w-Z3r" secondAttribute="leading" id="jlR-i6-5lD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2L-Vw-PHl">
+                                <color key="backgroundColor" red="0.98823529409999999" green="0.28235294119999998" blue="0.19215686269999999" alpha="0.84999999999999998" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="pause">
+                                    <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4v4-ch-gVf">
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" image="play">
+                                    <color key="titleColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.036564279349999999" green="0.0072344690560000001" blue="0.1348475069" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="d2L-Vw-PHl" secondAttribute="trailing" constant="-15" id="BXb-BZ-rrn"/>
+                            <constraint firstItem="Jfg-8w-Z3r" firstAttribute="leading" secondItem="MUB-pP-DhU" secondAttribute="leading" id="NCW-UY-suu"/>
+                            <constraint firstItem="d2L-Vw-PHl" firstAttribute="leading" secondItem="4v4-ch-gVf" secondAttribute="trailing" constant="1" id="T5i-8l-4Px"/>
+                            <constraint firstItem="Jfg-8w-Z3r" firstAttribute="top" secondItem="TeL-B9-TwU" secondAttribute="bottom" id="WSR-cG-HcR"/>
+                            <constraint firstItem="4v4-ch-gVf" firstAttribute="leading" secondItem="MUB-pP-DhU" secondAttribute="leadingMargin" constant="-15" id="Znp-Lp-OaK"/>
+                            <constraint firstAttribute="trailing" secondItem="Jfg-8w-Z3r" secondAttribute="trailing" id="ZvE-hq-KUI"/>
+                            <constraint firstItem="d2L-Vw-PHl" firstAttribute="top" secondItem="4v4-ch-gVf" secondAttribute="top" id="aUU-IF-oNq"/>
+                            <constraint firstItem="Jfg-8w-Z3r" firstAttribute="height" secondItem="MUB-pP-DhU" secondAttribute="height" multiplier="0.39" id="c2F-E5-W4M"/>
+                            <constraint firstItem="d2L-Vw-PHl" firstAttribute="bottom" secondItem="4v4-ch-gVf" secondAttribute="bottom" id="fCN-hL-0HM"/>
+                            <constraint firstItem="tnJ-SL-s3y" firstAttribute="top" secondItem="4v4-ch-gVf" secondAttribute="bottom" constant="1" id="jUn-Ty-jxi"/>
+                            <constraint firstItem="4v4-ch-gVf" firstAttribute="width" secondItem="MUB-pP-DhU" secondAttribute="width" multiplier="0.5" id="mKu-5G-IG3"/>
+                            <constraint firstItem="4v4-ch-gVf" firstAttribute="top" secondItem="Jfg-8w-Z3r" secondAttribute="bottom" id="sXj-yw-r4i"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MIB-2h-1r0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="190" y="111"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pause" width="42" height="56"/>
+        <image name="play" width="48" height="61"/>
+    </resources>
+</document>
